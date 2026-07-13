@@ -2,6 +2,30 @@
 
 ---
 
+## SEO Session — 2026-07-13
+
+**Audited:** First real Google Search Console data reviewed (3-month Performance report, screenshot provided by Ayoub): 6.66K impressions, 3 clicks, 0.045% CTR, **average position 73.1**. Confirms the site is being crawled and occasionally surfaced, but ranks far too low (~page 8) to get real clicks — a domain-authority/indexation problem, not an on-page one. Re-checked `site:renovatecost.com` — still only 2/17 pages showing (unchanged from before this session's fixes; expected, indexing takes time to catch up).
+
+**Fixed:**
+- Two rounds of image polish on the 7 content images added last session: (1) removed `loading="lazy"` after a persistent favicon-overlay rendering artifact was reported — confirmed via direct pixel inspection that the icon was never actually in the files; (2) discovered and fixed a real, consistent bug in the original graphics: the "renovatecost.com" wordmark text overlapped the headline in all 7 images. Erased the wordmark pixels (redundant anyway — the site nav already shows the logo) rather than cropping, since cropping clipped headline text in several images.
+- Colors on all 7 images recolored from their original mixed palette (orange/gold/teal/dark-green/dark-red) to the site's actual blue (#1a56db) / navy (#0f172a) theme, preserving color only where it's semantically meaningful (ROI bar chart ranking, cheap-state vs. expensive-state comparison).
+
+**Added:**
+- New page: `blog-garage-conversion-cost.html`. The calculator supports 7 room types (kitchen, bathroom, bedroom, living room, basement, roof, garage) but garage was the only one with zero dedicated content despite having real cost data in `calculator.js`. Covers basic garage renovation vs. full living-space conversion (materially different cost categories — HVAC/permits/egress) plus state variance and resale-value tradeoffs. Wired into the room-calculator's room-grid (was linking to a generic calculator anchor), added as a 4th related-guide on 2 other posts for inbound links, added to sitemap.xml.
+
+**Findings for next session:**
+- Garage page is brand new — no ranking data yet, revisit once it's been indexed a few weeks.
+- Bedroom and Living Room are the only remaining room types without dedicated blog posts — same content gap pattern as garage, lower priority since they're less commonly searched as standalone renovation projects.
+- Still haven't received Queries/Pages/Coverage exports from GSC — the position-73 diagnosis is directional (from the summary graph only), not query-specific. Next session should use those to find which specific queries are closest to breaking onto page 1.
+
+**Needs Ayoub's input:**
+- Export GSC Queries, Pages, and Coverage/Indexing reports (still outstanding from last session's ask)
+- Backlink outreach — this is now the single biggest lever left for the position-73 problem, and it's manual by design. Can draft outreach/pitch copy on request.
+- Confirm sitemap is submitted in Bing Webmaster Tools (separate from Google, unconfirmed)
+- Consider using GSC's URL Inspection tool to manually request indexing for the pages fixed this session and last (privacy.html, about.html especially, since they were broken HTML until recently and may have been rejected by Google's indexer)
+
+---
+
 ## SEO Session — 2026-07-10
 
 **Audited:**
