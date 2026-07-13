@@ -2,6 +2,35 @@
 
 ---
 
+## SEO Session — 2026-07-13 (part 2: indexing cleanup)
+
+**Audited:** Walked through actual GSC and Bing Webmaster Tools data with Ayoub (screen-shared, Ayoub drove all logged-in actions — Claude Code does not and will not hold credentials for either account).
+
+Google Page Indexing report (dated 6/30/26, i.e. before this week's fixes had been crawled):
+- 15/18 pages already indexed — much better than the `site:` search operator suggested (that only ever showed 2, confirmed as an unreliable signal, not a real problem)
+- 3 not indexed, broken into 2 issues:
+  - **Duplicate without user-selected canonical** (1 page: `index.html`) — root cause was GitHub Pages serving identical content at both `renovatecost.com/` and `renovatecost.com/index.html` with no canonical signal before this week's canonical-tag fix
+  - **Discovered - currently not indexed** (2 pages: `privacy.html`, `blog-free-home-renovation-estimate.html`) — Google knew about them via sitemap but hadn't prioritized crawling. `privacy.html` likely relates to it being broken HTML until this week; `blog-free-home-renovation-estimate.html` was never broken, so this one is a genuine crawl-budget/low-authority signal, not a code issue.
+
+Bing Webmaster Tools:
+- Sitemap already registered and reading successfully (Status: Success) — nothing was broken, just hadn't recrawled since 5/31/26
+- `about.html` URL Inspection showed "Discovered but not crawled — URL cannot appear on Bing," consistent with the same broken-HTML theory
+
+**Fixed:**
+- Nothing code-side this entry — this was entirely GSC/Bing UI actions performed by Ayoub, guided step-by-step.
+
+**Added:** n/a
+
+**Findings for next session:**
+- Confirmed diagnosis: the site's remaining indexing gaps are (a) stale crawl data that should self-resolve now that canonical tags + broken-HTML fixes are live, and (b) one genuine crawl-budget/authority signal (`blog-free-home-renovation-estimate.html` sat un-crawled for 3 months) — this second category is what backlinks actually fix, code changes can't.
+- Give it 1-3 weeks before re-checking the Page Indexing report — validation and reindex requests aren't instant.
+
+**Needs Ayoub's input:**
+- Actions completed this session: resubmitted Bing sitemap; requested Bing indexing for `about.html`; clicked "Validate Fix" in GSC for the canonical issue and the discovered-not-indexed issue; requested Google indexing directly for `privacy.html`, `about.html`, `blog-garage-conversion-cost.html`, and the homepage. Nothing further needed from Ayoub on indexing until the recrawl window has passed.
+- Backlink outreach (see `backlink-outreach.md`) is still the single open, non-automatic item.
+
+---
+
 ## SEO Session — 2026-07-13
 
 **Audited:** First real Google Search Console data reviewed (3-month Performance report, screenshot provided by Ayoub): 6.66K impressions, 3 clicks, 0.045% CTR, **average position 73.1**. Confirms the site is being crawled and occasionally surfaced, but ranks far too low (~page 8) to get real clicks — a domain-authority/indexation problem, not an on-page one. Re-checked `site:renovatecost.com` — still only 2/17 pages showing (unchanged from before this session's fixes; expected, indexing takes time to catch up).
