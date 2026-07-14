@@ -5,6 +5,33 @@ missing ingredient is external trust signals (backlinks). This is manual
 outreach — Claude Code doesn't send anything on your behalf, per its own
 guardrails. Copy/paste and personalize before sending.
 
+**New asset to reference in all outreach:** [renovatecost.com/renovation-cost-index-by-state.html](https://renovatecost.com/renovation-cost-index-by-state.html)
+— a standalone data page ranking all 50 states by renovation cost. Link to
+*this specific page*, not just the homepage, when pitching journalists or
+bloggers — data pages get cited far more than generic tool pages.
+
+---
+
+## Real leads found (2026-07-14 research pass)
+
+Verified via web search — not guesses. Vet each site's own quality/reputation
+before pitching (a "write for us" page open to anyone can mean low editorial
+bar; skim a few of their existing published posts first).
+
+**Guest-post targets with confirmed submission emails:**
+| Site | Contact | Notes |
+|---|---|---|
+| Model Home Improvement | hello@modelhomeimprovement.com | Wants 1500-2500 word posts, broad home-improvement scope |
+| UseHomeTips.com | via their write-for-us page | 1000-10,000 words, must be unfinished/unpublished elsewhere |
+| Beautiful House Tips | via their write-for-us page | 800+ words, DIY renovation angle fits well |
+| Fifti Fifti | via their write-for-us page | 1000+ words minimum |
+| Home & Design Magazine | via their write-for-us page | 800-1500 words, more editorial/higher bar — good one to lead with if accepted |
+
+Start with **Home & Design Magazine** — tighter word count and a magazine
+format usually signals a real editorial process (higher-quality link) rather
+than a pure guest-post mill. Pitch it the ROI or budget-guide angle from the
+Target 2 template below.
+
 ---
 
 ## Target 1 — Home improvement / DIY forums & communities
@@ -72,9 +99,12 @@ Search for "renovation," "home improvement," "contractor," "home value"
 queries. Respond fast (journalists work on deadlines) with a specific,
 quotable stat from your own data, e.g.:
 
-> "The gap between the cheapest and most expensive states for the same
-> kitchen remodel is about $25,000 — Mississippi averages $18K, California
-> averages $43K for identical work." — [Your name], RenovateCost.com
+> "The gap between the cheapest and most expensive states for renovation is
+> nearly 2x — Mississippi runs about 23% below the national average, while
+> Hawaii runs 48% above it. A $23,600 kitchen remodel nationally costs
+> roughly $18,200 in Mississippi versus $34,900 in Hawaii for identical
+> work." — [Your name], RenovateCost.com (full data:
+> renovatecost.com/renovation-cost-index-by-state.html)
 
 Include your name, site, and a one-line credential (e.g. "I run a free
 renovation cost calculator built on HomeAdvisor/Angi/RSMeans data").
